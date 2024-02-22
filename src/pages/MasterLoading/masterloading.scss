@@ -1,0 +1,121 @@
+.parent {
+  visibility: hidden;
+  animation: coolparent 2s ease;
+}
+.animation-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: change 2s ease;
+}
+
+@keyframes change {
+  0% {
+    content: url('../../assets/vectors/Eyeglasses_frames_1.svg');
+    scale: 1;
+    background-color: white;
+  }
+  6% {
+    content: url('../../assets/vectors/Eyeglasses_frames_2.svg');
+    scale: 1;
+    background-color: white;
+  }
+  12% {
+    content: url('../../assets/vectors/Eyeglasses_frames_3.svg');
+    scale: 1;
+    background-color: white;
+  }
+  18% {
+    content: url('../../assets/vectors/Eyeglasses_frames_4.svg');
+    scale: 1;
+    background-color: white;
+  }
+  24% {
+    content: url('../../assets/vectors/Eyeglasses_frames_5.svg');
+    scale: 1;
+    background-color: white;
+  }
+  30% {
+    content: url('../../assets/vectors/Eyeglasses_frames_6.svg');
+    scale: 1;
+    background-color: white;
+  }
+  36% {
+    content: url('../../assets/vectors/Eyeglasses_frames_7.svg');
+    scale: 1;
+    background-color: white;
+  }
+  42% {
+    content: url('../../assets/vectors/Eyeglasses_frames_8.svg');
+    scale: 1;
+    background-color: white;
+  }
+  48% {
+    content: url('../../assets/vectors/Eyeglasses_frames_9.svg');
+    scale: 1;
+    background-color: white;
+  }
+  54% {
+    content: url('../../assets/vectors/Eyeglasses_frames_10.svg');
+    scale: 1;
+    background-color: white;
+  }
+  60% {
+    content: url('../../assets/vectors/Eyeglasses_frames_11.svg');
+    scale: 1;
+    background-color: white;
+  }
+  66% {
+    content: url('../../assets/vectors/Eyeglasses_frames_12.svg');
+    scale: 1;
+    background-color: white;
+  }
+  72% {
+    content: url('../../assets/vectors/Eyeglasses_frames_13.svg');
+    scale: 1;
+    background-color: white;
+  }
+  78% {
+    content: url('../../assets/vectors/Eyeglasses_frames_14.svg');
+    scale: 1;
+    background-color: white;
+  }
+  84% {
+    content: url('../../assets/vectors/Eyeglasses_frames_15.svg');
+    scale: 1;
+    background-color: white;
+  }
+  90% {
+    content: url('../../assets/vectors/Eyeglasses_frames_16.svg');
+    scale: 1;
+    background-color: white;
+  }
+  100% {
+    content: url('../../assets/vectors/Eyeglasses_frames_16.svg');
+    scale: 1;
+    background-color: white;
+  }
+}
+
+@keyframes coolparent {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+  }
+  75% {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+  }
+  87%{
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+  }
+}

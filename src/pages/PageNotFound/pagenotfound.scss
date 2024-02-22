@@ -1,0 +1,10 @@
+.app__text-secondary {
+  font-family: var(--font-Noto);
+}
+
+.cool-text {
+  background: url('../../assets/vectors/background-vector.svg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
