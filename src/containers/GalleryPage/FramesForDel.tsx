@@ -13,7 +13,7 @@ interface Product {
    interface CardProps {
      product: Product;
    }
- export default function FramesForDel({product}) {
+ export default function FramesForDel({product}:CardProps) { 
      const { _id,url, public_id, description, shape, price } = product;
 
      const handleDel=async ()=>{

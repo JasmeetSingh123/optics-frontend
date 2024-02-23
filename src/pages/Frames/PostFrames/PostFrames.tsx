@@ -135,7 +135,6 @@ export default function PostFrames() {
             <textarea
               id="description"
               name="description"
-              rows="4"
               className="border rounded-md py-2 px-3 w-full"
               value={description}
               onChange={(event) => setDescription(event.target.value)}

@@ -16,7 +16,7 @@ export default function Register() {
         setPassword(event.target.value)    
     }
 
-    const handleSubmit=(event: React.ChangeEvent<HTMLInputElement>)=>{
+    const handleSubmit=(event: React.FormEvent<HTMLFormElement>)=>{
         event.preventDefault()
         const userData = {
             name : name,

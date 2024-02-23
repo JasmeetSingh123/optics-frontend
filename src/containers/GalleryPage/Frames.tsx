@@ -11,7 +11,7 @@ interface Product {
   interface CardProps {
     product: Product;
   }
-export default function Frames({product}) {
+export default function Frames({product}: CardProps) {
     const { url, public_id, description, shape, price } = product;
     return (
       <>
