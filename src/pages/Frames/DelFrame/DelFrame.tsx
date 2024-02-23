@@ -42,7 +42,7 @@ export default function DelFrame(): JSX.Element {
       try {
         // Make a GET request to your backend retrieve endpoint
         const response = await axios.get(
-          `http://localhost:8001/api/admin/product/${page}`
+          `https://pothiwalopticals.onrender.com/api/admin/product/${page}`
         );
 
         setProducts(response.data.data);

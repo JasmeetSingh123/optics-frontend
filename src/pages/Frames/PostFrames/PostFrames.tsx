@@ -29,7 +29,7 @@ export default function PostFrames() {
 
         // Make a POST request to your backend upload endpoint
         const response = await axios.post(
-          "http://localhost:8001/api/admin/product",formData,{
+          "https://pothiwalopticals.onrender.com/api/admin/product",formData,{
             withCredentials: true
           }
           

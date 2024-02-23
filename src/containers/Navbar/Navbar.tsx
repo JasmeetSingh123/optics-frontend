@@ -10,7 +10,8 @@ interface INavbarProps {
 }
 
 
-const NavItems = [ "Technology", "Demo", "About us", "Contact" ]
+const NavItems = [ "About us", "Collections", "Feedback", "Contact" ]
+const  LinkItems = ["/comingsoon","/gallery","/feedback","/comingsoon"]
 
 export default function Navbar({ setIsMenuVisible }: INavbarProps) {
 
@@ -25,7 +26,7 @@ export default function Navbar({ setIsMenuVisible }: INavbarProps) {
         </div>
         <div className="app__navnar-items hidden lg:flex items-center justify-center gap-8 xl:gap-16">
           {NavItems.map((item, i) => (
-            <NavLink key={i.toString()} to="/comingsoon" >
+            <NavLink key={i.toString()} to={LinkItems[i]} >
               <div className="app__navbar-item cursor-pointer" >
                 <h4 className="text-[0.85rem] font-semibold text-black hover:scale-110 transition-all ease-in-out duration-300" >{item.toString()}</h4>
               </div>

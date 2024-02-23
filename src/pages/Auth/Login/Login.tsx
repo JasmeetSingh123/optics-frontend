@@ -25,7 +25,7 @@ export default function Login(){
         };
 
         // Send the user data to the backend server
-        axios.post('http://localhost:8001/api/user/auth/login',userData,{
+        axios.post('https://pothiwalopticals.onrender.com/api/user/auth/login',userData,{
             withCredentials: true
           })
         .then((response) => {

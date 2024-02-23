@@ -23,7 +23,7 @@ export default function Register() {
             email: email,
             password: password,
             };
-        axios.post('http://localhost:8001/api/user/auth/register',userData)
+        axios.post('https://pothiwalopticals.onrender.com/api/user/auth/register',userData)
         .then((res)=>{
             console.log('registration Successful');
 

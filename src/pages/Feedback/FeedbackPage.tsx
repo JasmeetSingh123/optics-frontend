@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Footer, Navbar, WrapperFrame } from '../../containers';
 import { motion,AnimatePresence } from 'framer-motion';
 import { MdClose } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const NavItems = [ "Technology", "Demo", "About us", "Contact" ]
 
@@ -22,7 +23,7 @@ export default function FeedbackPage(){
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const response = await axios.get('http://localhost:8001/api/user/feedback');
+        const response = await axios.get('https://pothiwalopticals.onrender.com/api/user/feedback');
         setFeedback(response.data.data);
       } catch (error) {
         console.error('Error fetching feedback:', error);
@@ -76,6 +77,11 @@ export default function FeedbackPage(){
         
           <div className="container mx-auto p-4">
       <h2 className="text-2xl font-bold mb-4 my-10">Feedback List</h2>
+      <Link to='/addfeedback'>
+      <button className="app__navbar-button border border-[#000] rounded-full text-[0.85rem] font-semibold text-black px-5 py-2 hover:text-white hover:shadow-[inset_13rem_0_0_0] hover:shadow-black duration-[400ms,700ms] transition-[color,box-shadow]" >Give Review</button>
+
+      </Link>
+
 
       {feedback.length === 0 ? (
         <p>No feedback available.</p>

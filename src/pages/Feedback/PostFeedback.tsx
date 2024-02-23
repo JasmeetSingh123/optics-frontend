@@ -27,7 +27,7 @@ export default function PostFeedback(){
     const handleSubmit=async(event:React.FormEvent)=>{
         event.preventDefault();
         try{
-            await axios.post('http://localhost:8001/api/user/feedback',{name,rating,review})
+            await axios.post('https://pothiwalopticals.onrender.com/api/user/feedback',{name,rating,review})
             setName('');
             setRating(1);
             setReview('');

@@ -19,7 +19,7 @@ interface Product {
      const handleDel=async ()=>{
         try{
             const response = await axios.delete(
-                `http://localhost:8001/api/admin/product/${_id}`
+                `https://pothiwalopticals.onrender.com/api/admin/product/${_id}`
                 );
             console.log(response)
             
